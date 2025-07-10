@@ -1,6 +1,6 @@
 # calculating simple interest as interest = principla(P) * rate(R) * time(T)
-P = 1000
-R = 0.05
-T = 3
-Interest = P * R * T 
+principal = 1000
+rate = 0.05
+time = 3
+Interest = principal * rate * time 
 print("The simple interest is", Interest)
