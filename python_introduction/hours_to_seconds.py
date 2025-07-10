@@ -1,4 +1,3 @@
 hours = 2
-secondsinhour = 3600
-seconds = hours * secondsinhour
+seconds = 60 * 60 * 2
 print(hours, "hour(s) is", seconds, "seconds")
