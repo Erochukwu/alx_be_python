@@ -12,12 +12,12 @@ def main(Toothbrush="none", Broom="none", Towel="none", Pot="none", Book="none",
         choice = input("Enter your choice: ")
 
         if choice == '1':
-            item = input("Enter an item to add").strip()
+            item = input("Enter the item to add").strip()
             if item:
                 shopping_list.append(item)
             pass
         elif choice == '2':
-            item = input("Enter an item to remove").strip()
+            item = input("Enter the item to remove").strip()
             if item:
                 shopping_list.remove(item)
             pass
@@ -36,4 +36,4 @@ def main(Toothbrush="none", Broom="none", Towel="none", Pot="none", Book="none",
             print("Invalid choice. Please try again.")
 
 if __name__ == "__main__":
-    main()
+    main()s
