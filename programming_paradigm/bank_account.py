@@ -6,13 +6,13 @@ class BankAccount:
         if amount > self.account_balance:
             self.account_balance += amount
     
-    def withdraw(amount):
-        if amount <= self.account_balance:
-        self.account_balance -= amount
-        print(f"Withdrew: ${amount}")
-        return true
-    else:
-        print(f"Insufficient funds.")
+        def withdraw(amount):
+            if amount <= self.account_balance:
+                self.account_balance -= amount
+                print(f"Withdrew: ${amount}")
+                return true
+            else:
+                print(f"Insufficient funds.")
 
     def display_balance(self):
         print(f"Current Balance: {self.account_balance}")
