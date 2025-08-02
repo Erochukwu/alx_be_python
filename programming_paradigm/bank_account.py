@@ -5,7 +5,6 @@ class BankAccount:
     def deposit(self, amount):
         if amount > self.account_balance:
             self.account_balance = amount
-            print("Current balance: , {self.account_balance}")
     
         def withdraw(amount):
             if amount <= self.account_balance:
@@ -13,6 +12,3 @@ class BankAccount:
                 print("Current balance: , {self.account_balance}")
             else:
                 print("You do not have sufficient balance for this withdrawal")
-
-    def display_balance(self):
-        print("Current balance: , {self.account_balance}")
