@@ -14,4 +14,4 @@ class BankAccount:
                 print("You do not have sufficient balance for this withdrawal")
 
     def display_balance(self):
-        print("Current balance is, {self.account_balance}")
+        print("Current balance: , {self.account_balance}")
