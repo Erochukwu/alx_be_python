@@ -12,4 +12,6 @@ class BankAccount:
                 print("your new account balance is, {self.account_balance}")
             else:
                 print("You do not have sufficient balance for this withdrawal")
-    
+
+    def display_balance(self):
+        print("Current balance is, {self.account_balance}")
