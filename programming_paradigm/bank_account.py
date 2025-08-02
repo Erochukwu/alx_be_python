@@ -2,6 +2,9 @@ class BankAccount:
     def __init__(self, account_balance):
         self.account_balance = 0
 
+    def display_balance(self):
+        print("Current balance: {self.account_balance}")
+
     def deposit(self, amount):
         if amount > self.account_balance:
             self.account_balance = amount
