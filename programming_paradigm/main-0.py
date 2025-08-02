@@ -10,10 +10,10 @@ def main():
     amount = float(params[0]) if params else None
 
     if command == "deposit" and amount is not None:
-        account.deposit(50)
+        account.deposit(100)
         print(f"Deposited: ${amount}")
     elif command == "withdraw" and amount is not None:
-        if account.withdraw(30):
+        if account.withdraw(50):
             print(f"Withdrew: ${amount}")
         else:
             print("Insufficient funds.")
