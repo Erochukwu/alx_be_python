@@ -22,12 +22,11 @@ class Library:
         print(f"No available copy of '{title}' to check out.")
 
     def return_book(self, title):
-        for book in self.books:
+        for book in self._books:
             if book.title == title and book.is_checked_out():
                 book.check_in()
-                print(f"Returned: '{book.title}'")
-                return          
-        print(f"No checked-out copy of '{title}' found.")
+                return True        
+        return False
 
     def list_available_books(self):
         available_book = [book for book in self._books if not book.is_checked_out()]
@@ -35,4 +34,3 @@ class Library:
             print("No books available.")
             for book in available_books:
                 print(f"- {book.title} by {book.author}")
-                    
