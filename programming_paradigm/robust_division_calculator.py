@@ -1,10 +1,10 @@
 def safe_divide(numerator, denominator):
     try:
-        x = int(input("Enter a number"))
-        y = int(input("Enter a number"))
+        x = float(numerator)
+        y = float(denominator)
         try:
             result = x/y
-            return f"Result: {result}
+            return f"Result: {result}"
         except ZeroDivisionError:
             return "Error: Cannot divide by zero."
     except ValueError:
