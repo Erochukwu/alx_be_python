@@ -26,6 +26,13 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(4, 8), 30)
         self.assertEqual(self.calc.multiply(10, 0), 0)
         self.assertEqual(self.calc.multiply(6, 3), 6)
-        # Add more assertions to thoroughly test the add method.
+
+    def test_division(self):
+        self.assertEqual(self.calc.divide(6, 1), 6)
+        self.assertEqual(self.calc.divide(0, 7), 6)
+        self.assertEqual(self.calc.divide(9, 4), 2.25)
+        self.assertEqual(self.calc.divide(4, 0), 0)
+        self.assertEqual(self.calc.divide(6, 8), 1.33)
+        # Add more assertions to thoroughly test thself.assertEqual(self.calc.divide(6, 1), 6)e add method.
 
 # Remember to write additional test methods for subtract, multiply, and divide.
