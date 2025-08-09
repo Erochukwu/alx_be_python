@@ -10,8 +10,8 @@ class Book:
     
     def __del__(self):
         self.file.close()
-        
-    def __str__(self):
+
+    def __repr__(self):
         return f"Book('{self.title}', '{self.author}', {self.year})"
     
 
