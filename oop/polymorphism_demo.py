@@ -2,17 +2,19 @@ import math
 
 class Shape:
     def area(self):
-        print("NotImplementedError")
+        raise NotImplementedError("Subclass must implement area method")
 
 class Retangle(Shape):
-    def area(self, length, width):
+    def __init__(self, length, width):
         self.length = length
         self.width = width
-        area = length * width
-        return area
+        
+    def area(self):
+        return self.length * self.width
 
 class Circle(Shape):
-    def area(self, radius):
+    def __init__(self, radius):
         self.radius = radius
-        area = math.pi * (self.radius ** 2)
-        return area
+
+    def area(self):
+        return math.pi * (self.radius ** 2)
