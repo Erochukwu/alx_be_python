@@ -16,5 +16,16 @@ class PrintBook(Book):
         super().__init__(title, author)
         self.page_count = __package__
 
-add_book(self, book)
-list_book(self)
+class Library:
+    def __init__(self):
+        self.books = []
+
+    def add_book(self, book):
+        self.books.append(book)
+
+    def list_books(self):
+        if not self.books:
+            print("No books in the library")
+        else:
+            for book in self.books:
+                print(book)
